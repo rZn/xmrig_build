@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 
-cd ..
+cd
 rm -rf xmrig/
 git clone https://github.com/MoneroOcean/xmrig.git
 cd xmrig
