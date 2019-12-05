@@ -45,7 +45,7 @@ if ! which lscpu >/dev/null; then
   echo "ERROR: This script requires \"lscpu\" utility to work correctly"
   exit 1
 fi
-
+xmrig:master
 if ! which curl >/dev/null; then
   echo "ERROR: This script requires \"curl\" utility to work correctly"
   exit 1
@@ -213,7 +213,7 @@ mkdir $HOME/moneroocean
 chmod +x compile_and_config.sh
 cp -fv compile_and_config.sh $HOME/moneroocean/
 cd $HOME/moneroocean
-compile_and_config.sh
+./xmrig:mastercompile_and_config.sh
 
 echo "[*] Checking if advanced version of $HOME/moneroocean/xmrig works fine (and not removed by antivirus software)"
 sed -i 's/"donate-level": *[^,]*,/"donate-level": 1,/' $HOME/moneroocean/config.json
