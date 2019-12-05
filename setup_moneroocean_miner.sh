@@ -271,7 +271,7 @@ sed -i 's#"log-file": *null,#"log-file": "'$HOME/moneroocean/xmrig.log'",#' $HOM
 sed -i 's/"syslog": *[^,]*,/"syslog": true,/' $HOME/moneroocean/config.json
 
 #enable Nicehash
-sed -i 's/"nicehash": *false,/"nicehash": true,/' $HOME/moneroocean/config_background.json
+sed -i 's/"nicehash": *false,/"nicehash": true,/' $HOME/moneroocean/config.json
 
 cp $HOME/moneroocean/config.json $HOME/moneroocean/config_background.json
 sed -i 's/"background": *false,/"background": true,/' $HOME/moneroocean/config_background.json
