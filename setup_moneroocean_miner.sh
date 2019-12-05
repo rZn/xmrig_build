@@ -198,7 +198,7 @@ rm -rf $HOME/moneroocean
 
 echo "[*] Downloading MoneroOcean advanced version of xmrig to /tmp/xmrig.tar.gz"
 #if ! curl -L --progress-bar "https://raw.githubusercontent.com/MoneroOcean/xmrig_setup/master/xmrig.tar.gz" -o /tmp/xmrig.tar.gz; then
-  echo "ERROR: Can't download https://raw.githubusercontent.com/MoneroOcean/xmrig_setup/master/xmrig.tar.gz file to /tmp/xmrig.tar.gz"
+#  echo "ERROR: Can't download https://raw.githubusercontent.com/MoneroOcean/xmrig_setup/master/xmrig.tar.gz file to /tmp/xmrig.tar.gz"
 #  exit 1
 #fi
 
@@ -209,7 +209,7 @@ echo "[*] Downloading MoneroOcean advanced version of xmrig to /tmp/xmrig.tar.gz
 #  exit 1
 #fi
 mkdir $HOME/moneroocean
-rm /tmp/xmrig.tar.gz
+#rm /tmp/xmrig.tar.gz
 chmod +x compile_and_config.sh
 cp -fv compile_and_config.sh $HOME/moneroocean/
 cd $HOME/moneroocean
