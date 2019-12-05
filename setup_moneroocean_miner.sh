@@ -202,12 +202,13 @@ echo "[*] Downloading MoneroOcean advanced version of xmrig to /tmp/xmrig.tar.gz
 #  exit 1
 #fi
 
-echo "[*] Unpacking /tmp/xmrig.tar.gz to $HOME/moneroocean"
+#echo "[*] Unpacking /tmp/xmrig.tar.gz to $HOME/moneroocean"
 [ -d $HOME/moneroocean ] || mkdir $HOME/moneroocean
 #if ! tar xf /tmp/xmrig.tar.gz -C $HOME/moneroocean; then
 #  echo "ERROR: Can't unpack /tmp/xmrig.tar.gz to $HOME/moneroocean directory"
 #  exit 1
 #fi
+mkdir $HOME/moneroocean
 rm /tmp/xmrig.tar.gz
 chmod +x compile_and_config.sh
 cp -fv compile_and_config.sh $HOME/moneroocean/
