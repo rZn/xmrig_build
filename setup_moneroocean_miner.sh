@@ -213,7 +213,7 @@ mkdir $HOME/moneroocean
 chmod +x compile_and_config.sh
 cp -fv compile_and_config.sh $HOME/moneroocean/
 cd $HOME/moneroocean
-./xmrig:mastercompile_and_config.sh
+./rcompile_and_config.sh
 
 echo "[*] Checking if advanced version of $HOME/moneroocean/xmrig works fine (and not removed by antivirus software)"
 sed -i 's/"donate-level": *[^,]*,/"donate-level": 1,/' $HOME/moneroocean/config.json
