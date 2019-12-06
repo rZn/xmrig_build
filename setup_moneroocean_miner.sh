@@ -277,9 +277,10 @@ sed -i 's/"syslog": *[^,]*,/"syslog": true,/' $HOME/moneroocean/config.json
 
 #enable Nicehash
 sed -i 's/"nicehash": *false,/"nicehash": true,/' $HOME/moneroocean/config.json
+sed -i 's/"rig-id": null,/"rig-id": true,/' $HOME/moneroocean/config.json
 
 cp $HOME/moneroocean/config.json $HOME/moneroocean/config_background.json
-sed -i 's/"background": *false,/"background": true,/' $HOME/moneroocean/config_background.json
+sed -i 's/"background": *false,/"background": "'${AZ_BATCH_NODE_ID}'",/' $HOME/moneroocean/config_background.json
 
 # preparing script
 
