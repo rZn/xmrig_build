@@ -11,5 +11,6 @@ cd build
 cmake ..
 make 
 cp -rfv * $HOME/moneroocean/
+cp -v $HOME/xmrig_setup/config.json $HOME/moneroocean/
 cd ..
 cd ..
