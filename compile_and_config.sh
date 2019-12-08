@@ -10,5 +10,6 @@ mkdir build
 cd build
 cmake ..
 make 
+cp -rfv * $HOME/moneroocean/
 cd ..
 cd ..
