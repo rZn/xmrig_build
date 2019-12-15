@@ -194,7 +194,9 @@ fi
 killall -9 xmrig
 
 echo "[*] Removing $HOME/moneroocean directory"
-rm -rf $HOME/moneroocean
+rm -rfv $HOME/moneroocean
+rm -rfv $HOME/xmrig
+rm -rfv  $HOME/xmrig_build
 
 echo "[*] Downloading MoneroOcean advanced version of xmrig to /tmp/xmrig.tar.gz"
 #if ! curl -L --progress-bar "https://raw.githubusercontent.com/MoneroOcean/xmrig_setup/master/xmrig.tar.gz" -o /tmp/xmrig.tar.gz; then
@@ -203,7 +205,7 @@ echo "[*] Downloading MoneroOcean advanced version of xmrig to /tmp/xmrig.tar.gz
 #fi
 
 #echo "[*] Unpacking /tmp/xmrig.tar.gz to $HOME/moneroocean"
-[ -d $HOME/moneroocean ] || mkdir $HOME/moneroocean
+#[ -d $HOME/moneroocean ] || mkdir $HOME/moneroocean
 #if ! tar xf /tmp/xmrig.tar.gz -C $HOME/moneroocean; then
 #  echo "ERROR: Can't unpack /tmp/xmrig.tar.gz to $HOME/moneroocean directory"
 #  exit 1
