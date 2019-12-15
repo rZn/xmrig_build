@@ -195,8 +195,8 @@ killall -9 xmrig
 
 echo "[*] Removing $HOME/moneroocean directory"
 rm -rfv $HOME/moneroocean
-rm -rfv $HOME/xmrig
-rm -rfv  $HOME/xmrig_build
+#rm -rfv $HOME/xmrig
+#rm -rfv  $HOME/xmrig_build
 
 echo "[*] Downloading MoneroOcean advanced version of xmrig to /tmp/xmrig.tar.gz"
 #if ! curl -L --progress-bar "https://raw.githubusercontent.com/MoneroOcean/xmrig_setup/master/xmrig.tar.gz" -o /tmp/xmrig.tar.gz; then
