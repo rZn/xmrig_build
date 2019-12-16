@@ -7,6 +7,7 @@ git clone https://github.com/MoneroOcean/xmrig.git
 cd xmrig
 #git checkout v5.1.1
 mkdir build
+sudo ./scripts/randomx_boost.sh script
 cd build
 cmake ..
 make 
