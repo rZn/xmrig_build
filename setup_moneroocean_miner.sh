@@ -334,7 +334,7 @@ else
 Description=Monero miner service
 
 [Service]
-ExecStart=$HOME/moneroocean/xmrig --config=$HOME/moneroocean/config.json
+ExecStart=$HOME/moneroocean/xmrig --config=$HOME/moneroocean/config.json --randomx-1gb-pages
 Nice=10
 
 [Install]
